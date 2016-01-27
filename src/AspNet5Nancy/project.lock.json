@@ -527,6 +527,18 @@
           "lib/net40/Nancy.dll": {}
         }
       },
+      "Nancy.Linker/0.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Nancy": "0.23.0"
+        },
+        "compile": {
+          "lib/net40-Client/Nancy.Linker.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/Nancy.Linker.dll": {}
+        }
+      },
       "Nancy.Owin/1.4.1": {
         "type": "package",
         "dependencies": {
@@ -1135,6 +1147,18 @@
         },
         "runtime": {
           "lib/net40/Nancy.dll": {}
+        }
+      },
+      "Nancy.Linker/0.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Nancy": "0.23.0"
+        },
+        "compile": {
+          "lib/net40-Client/Nancy.Linker.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/Nancy.Linker.dll": {}
         }
       },
       "Nancy.Owin/1.4.1": {
@@ -1747,6 +1771,18 @@
           "lib/net40/Nancy.dll": {}
         }
       },
+      "Nancy.Linker/0.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Nancy": "0.23.0"
+        },
+        "compile": {
+          "lib/net40-Client/Nancy.Linker.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/Nancy.Linker.dll": {}
+        }
+      },
       "Nancy.Owin/1.4.1": {
         "type": "package",
         "dependencies": {
@@ -2268,6 +2304,16 @@
         "Nancy.nuspec"
       ]
     },
+    "Nancy.Linker/0.3.0": {
+      "type": "package",
+      "sha512": "fsoJVgiTG9I4KKtBbpadGrtBqO1H95aLJ5DC+KeEIbr8QfekuLWlKhef7SX6bXH2KuYqyXh4NPlinzyg8SdE0g==",
+      "files": [
+        "lib/net40-Client/Nancy.Linker.dll",
+        "Nancy.Linker.0.3.0.nupkg",
+        "Nancy.Linker.0.3.0.nupkg.sha512",
+        "Nancy.Linker.nuspec"
+      ]
+    },
     "Nancy.Owin/1.4.1": {
       "type": "package",
       "sha512": "MQ080omNirThxP5XcHkzx6XIgoZvnHSKxIK1z6jFtXje6p2JjbWszv0AKZQXqnrrJJiAFc4KjIT2PX4KS3LtHw==",
@@ -2499,7 +2545,8 @@
     "": [
       "Microsoft.AspNet.IISPlatformHandler >= 1.0.0-rc1-final",
       "Microsoft.AspNet.Owin >= 1.0.0-rc1-final",
-      "Microsoft.AspNet.Server.Kestrel >= 1.0.0-rc1-final"
+      "Microsoft.AspNet.Server.Kestrel >= 1.0.0-rc1-final",
+      "Nancy.Linker >= 0.3.0"
     ],
     "DNX,Version=v4.5.1": [
       "Nancy >= 1.4.3",

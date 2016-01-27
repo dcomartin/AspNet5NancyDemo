@@ -1,12 +1,19 @@
 ﻿using Nancy;
+using Nancy.Linker;
 
 namespace AspNet5Nancy
 {
     public class NancyDemoModule : NancyModule
     {
-        public NancyDemoModule()
+        public NancyDemoModule(IResourceLinker linker)
         {
-            Get["/nancy/demo"] = parameters => new string[] { "Hello", "World" };
+            Get["HelloWorldRoute", "/nancy/demo/{MyQueryParameter:string}"] =
+                parameters => new[] {"Hello", "World", (string) parameters.MyQueryParameter};
+
+            Get["FindHelloWorld", "/nancy/findhelloworld"] = parameters => new[]
+            {
+                linker.BuildAbsoluteUri(Context, "HelloWorldRoute", new {MyQueryParameter = "CodeOpinion"})
+            };
         }
     }
 }
