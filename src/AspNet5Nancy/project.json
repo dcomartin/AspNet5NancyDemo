@@ -4,6 +4,10 @@
     "emitEntryPoint": true
   },
 
+  "resource": [
+    "fakedata.json"
+  ],
+
   "dependencies": {
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
     "Microsoft.AspNet.Owin": "1.0.0-rc1-final",

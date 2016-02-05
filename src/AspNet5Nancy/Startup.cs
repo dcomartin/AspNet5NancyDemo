@@ -25,7 +25,7 @@ namespace AspNet5Nancy
 
             app.UseOwin(pipeline =>
             {
-                pipeline.UseNancy();
+                pipeline.UseNancy(options => options.Bootstrapper = new MyNancyBootstrapper());
             });
         }
 
